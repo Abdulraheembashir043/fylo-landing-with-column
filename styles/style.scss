@@ -1,0 +1,351 @@
+// ########## Default ##########
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+header, footer, main, nav {
+  display: block;
+}
+
+// ########## Mobile View ##########
+.wrapper {
+
+  h1, h2 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  nav {
+    margin: 20px 0 100px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    
+
+    img {
+      width: 80px;
+    }
+
+    ul {
+      justify-self: end;
+      list-style: none;
+
+      li {
+        display: inline;
+        font-size: .9em;
+
+        &:nth-of-type(2) {
+          margin: 0 10px;
+        }
+
+        a {
+          text-decoration: none;
+          color: hsl(243, 87%, 12%);
+        }
+
+      }
+
+    }
+
+  } //End of Nav
+
+  header {
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .heading {
+      text-align: center;
+      margin: 50px 0 0;
+      color: hsl(243, 87%, 12%);
+
+      h1 {
+        font-size: 1.6em;
+      }
+
+      p {
+        margin: 30px 0;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        color: hsl(0, 0%, 75%);
+        border: 1px solid hsl(0, 0%, 75%);
+        border-radius: 3px;
+        border-bottom: 1px solid hsl(243, 87%, 12%);;
+      }
+
+      button {
+        background: hsl(224, 93%, 58%);
+        color: white;
+        width: 100%;
+        padding: 10px 0;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px hsl(224, 93%, 58%);
+        cursor: pointer;
+      }
+
+    } //End of .header
+
+  } // End of header
+
+  main {
+
+    .first-section {
+      padding: 150px 20px 100px;
+      background: url(../images/bg-curve-mobile.svg) no-repeat bottom center;
+      background-size: 2500px 1550px;
+
+      img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .testimony {
+        margin: 100px 0 0;
+        
+        h2 {
+          font-size: 1.1em;
+          text-align: center;
+          margin-bottom: 30px;
+          color: hsl(243, 87%, 12%);
+        }
+  
+        p {
+          color: hsl(238, 22%, 44%);
+          font-size: .9em;
+  
+          &:nth-of-type(2) {
+            margin: 20px 0 40px;
+          }
+
+        }
+  
+        a {
+          color: hsl(170, 45%, 43%);
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+          
+  
+          img {
+            width: 10%;
+            display: inline-block;
+          }
+
+        }
+
+        .testimonial {
+          margin: 50px 20px 0;
+          background: white;
+          padding: 20px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          box-shadow: 1px 1px 10px hsl(0, 0%, 75%);
+
+          img {
+            width: 15px;
+            display: inline-block;
+          }
+
+          p {
+            margin: 10px 0;
+            line-height: 1.5;
+            font-size: .8em;
+          }
+
+          .testiomonial-image {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+
+            img {
+              width: 50px;
+              border-radius: 50%;
+            }
+
+            .testtomonial-name {
+              align-self: center;
+              margin-left: 10px;
+
+              p {
+                margin: 0;
+
+                &:nth-of-type(1) {
+                  font-weight: bold;
+                  color: hsl(243, 87%, 12%);
+                }
+
+                &:nth-of-type(2) {
+                  font-size: .7em;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      } // Enf of .testimony
+     
+    } // End of .first-section
+
+    .signup-section {
+      background: hsl(238, 22%, 44%);
+      color: hsl(240, 75%, 98%);
+      padding: 50px 35px 70px;
+      text-align: center;
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p {
+        margin: 20px 0;
+        line-height: 1.5;
+      }
+
+      form {
+        width: 250px;
+        margin: 0 auto;
+
+        input, button {
+          display: block;
+          width: 100%;
+          border: none;
+          border-radius: 5px;
+        }
+
+        input {
+          margin-bottom: 10px;
+          padding: 10px 20px;
+          box-sizing: border-box;
+          color: hsl(0, 0%, 75%); 
+        }
+
+        button {
+          background: hsl(224, 93%, 58%);
+          color: hsl(240, 75%, 98%);
+          font-weight: bold;
+          padding: 10px 0;
+          cursor: pointer;
+        }
+
+      } // End of Form
+
+    } // End of .signup-section
+
+  } // End of Main
+
+  footer {
+    background: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    padding: 50px 20px 0;
+
+    .logo {
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .contact {
+      margin: 50px 0 70px;
+
+      p {
+
+        &:nth-of-type(1) {
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin-right: 20px;
+        }
+
+      }
+
+    }
+
+    .updates {
+      margin-bottom: 50px;
+
+      a {
+        display: block;
+        color: hsl(240, 75%, 98%);
+        text-decoration: none;
+        margin-bottom: 1.5em;
+
+        &:nth-of-type(4) {
+          margin-bottom: 3em;
+        }
+
+        &:nth-of-type(7) {
+          margin-bottom: 0;
+        }
+
+      }
+
+    } // End of .updates
+
+    .social {
+      text-align: center;
+
+      img {
+        cursor: pointer;
+
+        &:nth-of-type(2) {
+          margin: 0 10px;
+        }
+
+      }
+
+    } // End of .social
+
+    .profile {
+      font-size: .75em;
+      text-align: center;
+      margin: 50px 0 0;
+  
+      #fspan {
+        padding-right: 10px;
+        border-right: 2px solid hsl(176, 68%, 64%);
+      }
+  
+      #sspan {
+        padding-left: 10px;
+        border-left: 2px solid white;
+      }
+  
+      a {
+        color: hsl(176, 68%, 64%);
+        text-decoration: underline;
+        text-decoration-color: white;
+  
+        &:hover {
+            text-decoration: none;
+        }
+  
+      }
+  
+    } // End of .profile
+
+  } // End of Footer
+
+} // End of Wrapper

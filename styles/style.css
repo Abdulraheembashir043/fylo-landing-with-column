@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header, footer, main, nav {
+  display: block;
+}
+
+.wrapper h1, .wrapper h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper nav {
+  margin: 20px 0 100px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+}
+
+.wrapper nav img {
+  width: 80px;
+}
+
+.wrapper nav ul {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  list-style: none;
+}
+
+.wrapper nav ul li {
+  display: inline;
+  font-size: .9em;
+}
+
+.wrapper nav ul li:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+.wrapper nav ul li a {
+  text-decoration: none;
+  color: #070439;
+}
+
+.wrapper header {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper header img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper header .heading {
+  text-align: center;
+  margin: 50px 0 0;
+  color: #070439;
+}
+
+.wrapper header .heading h1 {
+  font-size: 1.6em;
+}
+
+.wrapper header .heading p {
+  margin: 30px 0;
+}
+
+.wrapper header .heading input {
+  display: block;
+  width: 100%;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #bfbfbf;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  border-bottom: 1px solid #070439;
+}
+
+.wrapper header .heading button {
+  background: #3065f8;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px #3065f8;
+          box-shadow: 1px 1px 5px #3065f8;
+  cursor: pointer;
+}
+
+.wrapper main .first-section {
+  padding: 150px 20px 100px;
+  background: url(../images/bg-curve-mobile.svg) no-repeat bottom center;
+  background-size: 2500px 1550px;
+}
+
+.wrapper main .first-section img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper main .first-section .testimony {
+  margin: 100px 0 0;
+}
+
+.wrapper main .first-section .testimony h2 {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #070439;
+}
+
+.wrapper main .first-section .testimony p {
+  color: #585989;
+  font-size: .9em;
+}
+
+.wrapper main .first-section .testimony p:nth-of-type(2) {
+  margin: 20px 0 40px;
+}
+
+.wrapper main .first-section .testimony a {
+  color: #3c9f8f;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper main .first-section .testimony a img {
+  width: 10%;
+  display: inline-block;
+}
+
+.wrapper main .first-section .testimony .testimonial {
+  margin: 50px 20px 0;
+  background: white;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 10px #bfbfbf;
+          box-shadow: 1px 1px 10px #bfbfbf;
+}
+
+.wrapper main .first-section .testimony .testimonial img {
+  width: 15px;
+  display: inline-block;
+}
+
+.wrapper main .first-section .testimony .testimonial p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: .8em;
+}
+
+.wrapper main .first-section .testimony .testimonial .testiomonial-image {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+}
+
+.wrapper main .first-section .testimony .testimonial .testiomonial-image img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.wrapper main .first-section .testimony .testimonial .testiomonial-image .testtomonial-name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+}
+
+.wrapper main .first-section .testimony .testimonial .testiomonial-image .testtomonial-name p {
+  margin: 0;
+}
+
+.wrapper main .first-section .testimony .testimonial .testiomonial-image .testtomonial-name p:nth-of-type(1) {
+  font-weight: bold;
+  color: #070439;
+}
+
+.wrapper main .first-section .testimony .testimonial .testiomonial-image .testtomonial-name p:nth-of-type(2) {
+  font-size: .7em;
+}
+
+.wrapper main .signup-section {
+  background: #585989;
+  color: #f6f6fe;
+  padding: 50px 35px 70px;
+  text-align: center;
+}
+
+.wrapper main .signup-section h2 {
+  font-size: 1.3em;
+}
+
+.wrapper main .signup-section p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.wrapper main .signup-section form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.wrapper main .signup-section form input, .wrapper main .signup-section form button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.wrapper main .signup-section form input {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #bfbfbf;
+}
+
+.wrapper main .signup-section form button {
+  background: #3065f8;
+  color: #f6f6fe;
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.wrapper footer {
+  background: #070439;
+  color: #f6f6fe;
+  padding: 50px 20px 0;
+}
+
+.wrapper footer .logo img {
+  width: 150px;
+}
+
+.wrapper footer .contact {
+  margin: 50px 0 70px;
+}
+
+.wrapper footer .contact p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.wrapper footer .contact p img {
+  margin-right: 20px;
+}
+
+.wrapper footer .updates {
+  margin-bottom: 50px;
+}
+
+.wrapper footer .updates a {
+  display: block;
+  color: #f6f6fe;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+}
+
+.wrapper footer .updates a:nth-of-type(4) {
+  margin-bottom: 3em;
+}
+
+.wrapper footer .updates a:nth-of-type(7) {
+  margin-bottom: 0;
+}
+
+.wrapper footer .social {
+  text-align: center;
+}
+
+.wrapper footer .social img {
+  cursor: pointer;
+}
+
+.wrapper footer .social img:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+.wrapper footer .profile {
+  font-size: .75em;
+  text-align: center;
+  margin: 50px 0 0;
+}
+
+.wrapper footer .profile #fspan {
+  padding-right: 10px;
+  border-right: 2px solid #65e2d9;
+}
+
+.wrapper footer .profile #sspan {
+  padding-left: 10px;
+  border-left: 2px solid white;
+}
+
+.wrapper footer .profile a {
+  color: #65e2d9;
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.wrapper footer .profile a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
